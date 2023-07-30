@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneos de Padel</title>
+  <link rel="stylesheet" href="css/index_estilo.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <h1>Torneos de Padel</h1>
+     
+        <ul>
+          <li class="dropdown">
+            <span class="hamburger" onclick="openMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+            <ul class="menu" id="menu">
+              <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li><br>
+              <li><a href="#información" onclick="closeMenu()">Información</a></li><br>
+              <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
+              <li><a href="#resultados" onclick="closeMenu()">Resultados</a></li><br>
+              <li><a href="#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
+              <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+  </header>
+
+<!-- Información de los torneos -->
+
+  <main>
+    <section id="información">
+      <h2>INFORMACIÓN</h2>
+      <ul>
+          <li>Partidos a un set con punto de oro.</li>
+          <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
+          <li>Se garantiza los partidos del cuadro +1 de eliminatoria.</li>
+          <li>Premios para el campeón y subcampeón del cuadro principal y campeón del cuadro de consolación.</li>
+          <li>Agua y fruta de bienvenida.</li>
+      </ul>
+    </section>
+
+
+    <section id="proximos-torneos">
+      <h2>PRÓXIMOS TORNEOS</h2>
+      <ul>
+        <li>Torneo de Verano - 15 de Agosto 2023</li> <img style="width: 200px; height: 300px;" src="img/prueba.png">
+        <li>Torneo de Otoño - 30 de Septiembre 2023</li><img style="width: 200px; height: 300px;" src="img/ball.jpeg">
+        <li>Torneo de Invierno - 20 de Diciembre 2023</li><img style="width: 200px; height: 300px;" src="img/pista.jpeg">
+      </ul>
+    </section>
+
+  <!-- Resultados para los torneos ya realizados -->
+
+    <section id="resultados">
+      <h2>RESULTADOS</h2>
+      <table>
+        <tr>
+          <th>Torneo</th>
+          <th>Fecha</th>
+          <th>Campeones</th>
+        </tr>
+        <tr>
+          <td>Torneo Año Nuevo</td>
+          <td>2 de Enero 2023</td>
+          <td>gonzalo </td>
+        </tr>
+        <tr>
+          <td>Torneo de Navidad 2022</td>
+          <td>25 de Diciembre 2022</td>
+          <td>Jimmy neutron</td>
+        </tr>
+      </table>
+    </section>
+
+<!-- Form para la inscripción -->
+
+    <section id="inscripcion">
+      <h2>INSCRIPCIÓN</h2>
+        <form action="https://formspree.io/f/xknlonva" method="POST">
+           
+          <label for="torneo">Torneo al que desea inscribirse:</label>
+          <select id="torneo" name="torneo" required>
+            <option value="" selected disabled>Seleccionar torneo</option>
+            <option value="5 de agosoto">Torneo verano 5 de agosto</option>
+            <option value="15 de agosto">Torneo verano 15 de agosto</option>
+          </select><br>
+
+          
+
+
+            <div class="first_player">
+                <h4><u>Primer jugador:</u></h4>
+                <label for="nombre">Nombre y apellidos:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
+
+                <label for="telefono">Teléfono de contacto:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br>
+            </div>
+
+
+            <div class="second_player">
+                <h4><u>Segundo jugador:</u></h4>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre2" name="nombre2" required><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email2" name="email2" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
+
+                <label for="telefono">Teléfono de contacto:</label><br>
+                <input type="tel" id="telefono2" name="telefono2" required><br>
+            </div>
+
+
+
+            <br><label for="nivel">Nivel de juego:</label><br>
+            <select id="nivel" name="nivel" required>
+                <option value="" selected disabled>Seleccionar nivel</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+            <br>
+            <button type="submit">Enviar Inscripción</button>
+        </form>
+
+
+    </section>
+  </main>
+
+<!-- Footer -->
+
+  <div class="footer">
+    <footer>
+      <p>© 2023 Torneos de Padel. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

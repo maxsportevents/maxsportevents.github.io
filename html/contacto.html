@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../css/contacto_estilo.css">
+</head>
+<body>
+  <header>
+ <nav>
+    <h1>Contacto</h1>
+    <ul>
+        <li class="dropdown">
+          <span class="hamburger" onclick="openMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </span>
+          <ul class="menu" id="menu">
+            <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li><br>
+            <li><a href="../index.html" onclick="closeMenu()">Inicio</a></li><br>
+            <li><a href="../index.html#información" onclick="closeMenu()">Información</a></li><br>
+            <li><a href="../index.html#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
+            <li><a href="../index.html#resultados" onclick="closeMenu()">Resultados</a></li><br>
+            <li><a href="../index.html#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
+          </ul>
+        </li>
+      </ul>
+</nav>
+</header>
+       
+  <main>
+    <section id="formulario">
+      <h2>Envíanos un mensaje</h2>
+
+
+      <form action="https://formspree.io/f/mleygepl" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+    </section>
+  
+  </main>
+  <footer>
+    <p>© 2023 Torneos de Padel. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

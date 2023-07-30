@@ -1,0 +1,190 @@
+/* Estilos generales */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1% 0%;
+  }
+  
+  header h1 {
+    margin-left: 45%;
+    font-style: italic;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 4%;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+  
+  main {
+    padding: 2% 5%;
+  }
+  
+  section {
+    margin-bottom: 3%;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pie de página */
+  footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+  }
+  
+
+
+
+  /* Estilos para las tres rayas (hamburguesa) */
+.hamburger {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .hamburger::before {
+    top: 0;
+  }
+  
+  .hamburger::after {
+    bottom: 0;
+  }
+  
+  /* Estilos para rotar las rayas al abrir el menú */
+  .hamburger.open::before {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .hamburger.open::after {
+    left: 20%;
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+  
+  /* Estilos para el contenedor del menú */
+  .menu-container {
+    position: relative;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -200px; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
+    width: 200px;
+    height: 100vh;
+    background-color: gray;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* Estilos para mostrar el menú */
+  .menu.show {
+    left: 0;
+    height: 100%;
+    background-color: gray;
+  }
+
+  .menu li{
+    font-style: italic;
+    font-size: 18px;
+    padding: 30px;
+  }
+  
