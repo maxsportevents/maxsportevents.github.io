@@ -16,7 +16,6 @@ function closeMenu() {
   }
 
 
-  
  /* Obtener el elemento select del número de jugadores
 const selectJugadores = document.getElementById('jugadores');
 

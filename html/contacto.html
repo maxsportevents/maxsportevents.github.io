@@ -22,7 +22,6 @@
             <li><a href="../index.html" onclick="closeMenu()">Inicio</a></li><br>
             <li><a href="../index.html#información" onclick="closeMenu()">Información</a></li><br>
             <li><a href="../index.html#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
-            <li><a href="../index.html#resultados" onclick="closeMenu()">Resultados</a></li><br>
             <li><a href="../index.html#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
           </ul>
         </li>
@@ -36,6 +35,8 @@
 
 
       <form action="https://formspree.io/f/xgejavwd" method="POST">
+        <input type="hidden" name="_next" value="confirmacion.html">
+
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
