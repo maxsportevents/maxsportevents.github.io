@@ -12,7 +12,8 @@ body {
 
 header {
     overflow-x: hidden;
-    background-image: url("../img/logo3.JPG");
+    position: relative;
+    background-image: url("../img/logo.JPG");
     background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el fondo */
     background-position: center; /* Centrar la imagen de fondo */
     color: #fff;
