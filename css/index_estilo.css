@@ -12,7 +12,7 @@ body {
 
 header {
     overflow-x: hidden;
-    background-color: #000;
+    background-color: #271b1b;
     color: #fff;
     text-align: center;
     padding: 2% 0;
@@ -140,7 +140,7 @@ select {
 /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 5%;
+    top: 7%;
     left: 3%;
     display: block;
     width: 40px;
