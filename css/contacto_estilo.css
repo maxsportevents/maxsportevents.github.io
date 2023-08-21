@@ -163,7 +163,7 @@ nav ul li a:hover {
   
   /* Estilos para el menú desplegable */
   .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -200px; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
     width: 200px;
@@ -173,12 +173,13 @@ nav ul li a:hover {
     padding: 0;
     margin: 0;
     transition: left 0.3s ease-in-out;
+    z-index: 100;
   }
   
   /* Estilos para mostrar el menú */
   .menu.show {
     left: 0;
-    height: 100%;
+    height: 100vh;
     background-color: gray;
   }
 
@@ -188,3 +189,18 @@ nav ul li a:hover {
     padding: 30px;
   }
   
+  @media screen and (max-width: 768px) {
+    form {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    footer {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    }
+}
