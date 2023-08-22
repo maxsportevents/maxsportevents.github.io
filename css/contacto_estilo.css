@@ -112,7 +112,7 @@ nav ul li a:hover {
   /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 5%;
+    top: 1%;
     left: 3%;
     display: block;
     width: 40px;
