@@ -14,11 +14,18 @@ header {
     overflow-x: hidden;
     position: relative;
     background-image: url("../img/logo.JPG");
-    background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el fondo */
+    /*background-size: cover; /* Ajustar el tamaño de la imagen para cubrir el fondo */
     background-position: center; /* Centrar la imagen de fondo */
     color: #fff;
     text-align: center;
-    padding: 4% 0;
+    padding: 4% 0%;
+}
+
+b {
+    font-size: 16px;
+}
+b a {
+    color: rgb(59, 59, 196);
 }
 
 nav {
@@ -57,6 +64,7 @@ main {
 section {
     margin-bottom: 3%;
 }
+
 
 /* Estilos para el botón */
 .btn, button {
