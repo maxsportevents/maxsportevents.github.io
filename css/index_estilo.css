@@ -18,7 +18,7 @@ header {
     background-position: center; /* Centrar la imagen de fondo */
     color: #fff;
     text-align: center;
-    padding: 4% 0%;
+    padding: 6% 0%;
 }
 
 b {
@@ -248,6 +248,6 @@ select {
     background-position: center; /* Centrar la imagen de fondo */
     color: #fff;
     text-align: center;
-    padding: 8% 0;
+    padding: 3% 0;
 }
 }
