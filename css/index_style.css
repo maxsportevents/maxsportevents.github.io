@@ -21,6 +21,11 @@ header {
     padding: 6% 0%;
 }
 
+.post-img {
+    width: 500px;
+    height: 700px;
+}
+
 b {
     font-size: 16px;
 }
@@ -249,5 +254,9 @@ select {
     color: #fff;
     text-align: center;
     padding: 3% 0;
-}
+        }
+    .post-img{
+        height: 400px;
+        width: 300px;
+    }
 }

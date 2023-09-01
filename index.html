@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Torneos de Padel</title>
-  <link rel="stylesheet" href="css/index_estilo.css">
+  <link rel="stylesheet" href="css/index_style.css">
 </head>
 <body>
   <header>
@@ -22,7 +22,7 @@
               <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
               <li><a href="#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
               <li><a href="html/contacto.html">Contacto</a></li>
-              <li><a href="https://instagram.com/maxsportevents"><img style="width: 50px; height: 50px;" src="img/ig.jpg"></a></li>
+              <li><a href="https://instagram.com/maxsportevents"><img style="width: 50px; height: 50px;" src="img/instagram.jpeg"></a></li>
             </ul>
           </li>
         </ul>
@@ -46,8 +46,8 @@
     <section id="proximos-torneos">
       <h2>PRÓXIMOS TORNEOS</h2>
       <ul>
-        <li>TORNEO DE VERANO - 25 de agosto 2023</li>  <img style="width: 500px; height: 700px;" src="img/poster.jpg">
-        <li>I MAX TOURNOMENT - 15 de Septiembre 2023</li> <img style="width: 500px; height: 700px;" src="img/poster1.jpg">
+        <li>TORNEO DE VERANO - 25 de agosto 2023</li>  <img class="post-img" src="img/poster.jpg">
+        <li>I MAX TOURNOMENT - 15 de Septiembre 2023</li> <img class="post-img" src="img/poster1.jpg">
             <br><b>- Como llegar: <a 
                 href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
               >Padel D10Z</a></b><br>
@@ -98,15 +98,17 @@
 
 
 
-            <br><label for="nivel">Nivel de juego:</label><br>
+            <br><label for="nivel">Categoría a la que desea inscribirse:</label><br>
             <select id="nivel" name="nivel" required>
-                <option value="" selected disabled>Seleccionar nivel</option>
-                <option value="principiante">Principiante</option>
-                <option value="intermedio">Intermedio</option>
-                <option value="avanzado">Avanzado</option>
+                <option value="" selected disabled>Seleccionar Categoría</option>
+                <option value="principiante">I Categoría</option>
+                <option value="intermedio">II Categoría</option>
+                <option value="avanzado">III Categoría</option>
             </select>
             <br>
-            <button type="submit">Enviar Inscripción</button>
+            <h4><u>Importe: 40€</u></h4>
+            <p>El pago se realizara en efectivo en el lugar del torneo.</p>
+            <button type="submit">Realizar Inscripción</button>
         </form>
 
 
