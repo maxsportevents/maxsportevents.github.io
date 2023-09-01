@@ -27,6 +27,7 @@ body {
     border-radius: 5px;
     margin: 10px;
     transition: background-color 0.3s;
+    animation: vibration 1.5s linear infinite;
   }
   
   .boton:hover {
@@ -35,16 +36,23 @@ body {
 
   .botones-container{
     position: absolute;
-    top: 50%;
-    left: 10%;
-    background-color: rgb(88, 88, 212);
-    animation: vibration 1.5s linear infinite;
+    top: 36%;
+    left: 5%;
+    background-color: rgb(206, 206, 230);
+		width: 25%;
+		padding: 5px 20px 20px 20px;
+		border-radius: 10px;
+    text-align: center;
   }
   .botones-container2{
     position: absolute;
-    top: 50%;
-    right: 10%;
-    animation: vibration 1.5s linear infinite;
+    top: 39%;
+    right: 5%;
+    background-color: rgb(206, 206, 230);
+		width: 25%;
+		padding: 5px 20px 20px 20px;
+		border-radius: 10px;
+    text-align: center;
   }
 
   @keyframes vibration {
@@ -69,4 +77,42 @@ body {
     position: absolute;
     align-items: center;
     top: 90%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .boton {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      font-size: 10px;
+      border-radius: 5px;
+      margin: 5px;
+      transition: background-color 0.3s;
+    }
+    .botones-container{
+      position: absolute;
+      top: 36%;
+      left: 5%;
+      animation: vibration 1.5s linear infinite;
+      background-color: rgb(206, 206, 230);
+      width: 25%;
+      padding: 2px 10px 10px 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .botones-container2{
+      position: absolute;
+      top: 39%;
+      right: 5%;
+      animation: vibration 1.5s linear infinite;
+      background-color: rgb(206, 206, 230);
+      width: 25%;
+      padding: 2px 10px 10px 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 10px;
+    }
   }

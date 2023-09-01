@@ -3,126 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Torneos de Padel</title>
-  <link rel="stylesheet" href="css/index_style.css">
+  <title>MAX SPORT EVENTS</title>
+  <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-  <header>
-    <nav>
-        <ul>
-          <li class="dropdown">
-            <span class="hamburger" onclick="openMenu()">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-            </span>
-            <ul class="menu" id="menu">
-              <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li><br>
-              <li><a href="#información" onclick="closeMenu()">Información</a></li><br>
-              <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
-              <li><a href="#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
-              <li><a href="html/contacto.html">Contacto</a></li>
-              <li><a href="https://instagram.com/maxsportevents"><img style="width: 50px; height: 50px;" src="img/instagram.jpeg"></a></li>
-            </ul>
-          </li>
-        </ul>
-    </nav>
-  </header>
-
-<!-- Información de los torneos -->
-
-  <main>
-    <section id="información">
-      <h2>INFORMACIÓN</h2>
-      <ul>
-          <li>Partidos a un set con punto de oro.</li>
-          <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
-          <li>Se garantiza los partidos del cuadro +1 de eliminatoria.</li>
-          <li>Se garantiza un pack de bienvenida y premios por cada torneoA.</li>
-      </ul>
-    </section>
-
-
-    <section id="proximos-torneos">
-      <h2>PRÓXIMOS TORNEOS</h2>
-      <ul>
-        <li>TORNEO DE VERANO - 25 de agosto 2023</li>  <img class="post-img" src="img/poster.jpg">
-        <li>I MAX TOURNOMENT - 15 de Septiembre 2023</li> <img class="post-img" src="img/poster1.jpg">
-            <br><b>- Como llegar: <a 
-                href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
-              >Padel D10Z</a></b><br>
-      </ul>
-    </section>
-
-
-<!-- Form para la inscripción -->
-
-    <section id="inscripcion">
-      <h2>INSCRIPCIÓN</h2>
-        <form action="https://formspree.io/f/moqoevay" method="POST">
-           
-          <label for="torneo">Torneo al que desea inscribirse:</label>
-          <select id="torneo" name="torneo" required>
-            <option value="" selected disabled>Seleccionar torneo</option>
-            <option value="5 de agosoto">I MAX TOURNOMENT - 15 de Septiembre</option>
-            <!-- <option value="15 de agosto">Torneo verano 15 de agosto</option> -->
-          </select><br>
-
-          
-
-
-            <div class="first_player">
-                <h4><u>Primer jugador:</u></h4>
-                <label for="nombre">Nombre y apellidos:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
-
-                <label for="telefono">Teléfono de contacto:</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br>
-            </div>
-
-
-            <div class="second_player">
-                <h4><u>Segundo jugador:</u></h4>
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre2" name="nombre2" required><br>
-
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email2" name="email2" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
-
-                <label for="telefono">Teléfono de contacto:</label><br>
-                <input type="tel" id="telefono2" name="telefono2" required><br>
-            </div>
-
-
-
-            <br><label for="nivel">Categoría a la que desea inscribirse:</label><br>
-            <select id="nivel" name="nivel" required>
-                <option value="" selected disabled>Seleccionar Categoría</option>
-                <option value="principiante">I Categoría</option>
-                <option value="intermedio">II Categoría</option>
-                <option value="avanzado">III Categoría</option>
-            </select>
-            <br>
-            <h4><u>Importe: 40€</u></h4>
-            <p>El pago se realizara en efectivo en el lugar del torneo.</p>
-            <button type="submit">Realizar Inscripción</button>
-        </form>
-
-
-    </section>
-  </main>
-
-<!-- Footer -->
-
-  <div class="footer">
-    <footer>
-      <p>© 2023 MAX Sport Events. Todos los derechos reservados.</p>
-    </footer>
+  <div class="botones-container">
+    <p>En MAX Sport Events, creamos experiencias únicas en el mundo del pádel.<br>
+      Descubre nuestros emocionantes torneos y asegura tu lugar en la competencia.<br>
+      ¡Inscríbete hoy y vive la intensidad del pádel como nunca antes!</p>
+    <a class="boton" href="torneos.html">Torneos</a>
   </div>
-
-  <script src="js/script.js"></script>
+  <div class="botones-container2">
+    <p>¡Hablemos! Queremos escuchar tus preguntas, ideas y sugerencias.
+      Contacta con nosotros y juntos haremos que tu experiencia sea excepcional.</p>
+    <a class="boton" href="contacto.html">Contacto</a>
+  </div>
+  <div class="more_info">
+    Para mas información, contacta con nosotros:<br>
+    <a href="https://instagram.com/maxsportevents"><img src="../img/instagram.jpeg" style="height: 50px; width: 50px;"></a>
+    <a href="tel: 646263836">646263836</a>
+  </div>
 </body>
 </html>
