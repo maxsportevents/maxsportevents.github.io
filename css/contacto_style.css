@@ -42,6 +42,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 2% 4%;
+    cursor: pointer;
 }
 
 nav ul li a:hover {
