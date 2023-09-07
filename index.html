@@ -19,7 +19,6 @@
       </span>
       <ul class="menu" id="menu">
           <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li><br>
-          <li><a href=".." onclick="closeMenu()">Inicio</a></li><br>
           <li><a href="#información" onclick="closeMenu()">Información</a></li><br>
           <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
           <li><a href="#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
@@ -33,12 +32,16 @@
 
   <main>
 
-
-    <div class="botones-container">
-      <p>En MAX Sport Events, creamos experiencias únicas en el mundo del pádel.<br>
-        Descubre nuestros emocionantes torneos y asegura tu lugar en la competencia.<br>
-        ¡Inscríbete hoy y vive la intensidad del pádel como nunca antes!</p>
-      <a class="boton" href="#proximos-torneos">Torneos</a>
+    <div class="texto-inicio">
+      <p>Te damos la bienvenida a MAX Sport Events, tu destino para el emocionante mundo del pádel.<br>
+        Nuestra misión es fomentar la camaradería y la competencia, 
+          creando oportunidades emocionantes para que los jugadores de todos los niveles se destaquen en la cancha.<br>
+        Desde la intensidad de la competencia hasta la diversión y la emoción de cada partido, 
+          cada evento está cuidadosamente planeado para que disfrutes al máximo.<br>
+        Aquí, no solo encontrarás información sobre nuestros próximos torneos, sino también la oportunidad de inscribirte
+         y formar parte de nuestra creciente comunidad de apasionados del pádel. 
+        ¡Es hora de elevar tu juego al siguiente nivel y vivir la verdadera esencia del pádel con MAX Sport Events!</p>
+      <a class="boton" href="#inscripcion">INSCRÍBETE AHORA</a>
     </div>
 
 
@@ -89,7 +92,7 @@
 
 
             <div class="first_player">
-                <h4><u>Primer jugador:</u></h4>
+                <h4><span class="highlight">Primer jugador:</span></h4>
                 <label for="nombre">Nombre y apellidos:</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
 
@@ -102,7 +105,7 @@
 
 
             <div class="second_player">
-                <h4><u>Segundo jugador:</u></h4>
+              <h4><span class="highlight">Segundo jugador:</span></h4>
                 <label for="nombre">Nombre completo:</label><br>
                 <input type="text" id="nombre2" name="nombre2" required><br>
 

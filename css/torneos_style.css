@@ -20,6 +20,29 @@ header {
     text-align: center;
 }
 
+.texto-inicio{
+  background-color: rgb(219, 219, 57);
+  max-width: 50%;
+  padding: 2% 4%;
+}
+
+.boton {
+  position: relative;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+
 /*Imagen poster*/
 .post-img {
     width: 500px;
@@ -98,11 +121,15 @@ nav ul li a {
     color: #ffff;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+  text-decoration: none; /* Quitamos el subrayado predeterminado */
+  background-image: linear-gradient(to top, #007bff, #007bff); /* Color del subrayado */
+  background-repeat: no-repeat;
+  background-size: 100% 2px; /* Ancho y grosor del subrayado */
+  background-position: 0 100%; 
 }
 
 main {
@@ -129,22 +156,6 @@ section {
     background-color: #0056b3;
 }
 
-/* Estilos para la tabla de resultados */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 2%;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
 /* Estilos para el formulario de inscripción */
 form {
     max-width: 90%;
@@ -155,10 +166,17 @@ form {
     border-radius: 5px;
 }
 
+.highlight {
+  background-color: #007bff;
+  padding: 2px 5px;
+}
+
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
     color: #333;
+    outline: none;
 }
 
 input {
@@ -190,11 +208,24 @@ select {
     left: 0%;
 }
 
+/* Estilo base para el campo de entrada */
+input{
+  border-bottom: 2px solid #333;
+  transition: border-bottom 0.3s ease; /* Animación de transición */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Estilo para el borde de enfoque */
+input:focus {
+  border-bottom: 4px solid #007bff; /* Cambia el color del borde en enfoque */
+}
+
+
 
 /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 3%;
     display: block;
     width: 38px;
@@ -308,6 +339,10 @@ select {
     .menu p{
         font-size: 16px;
       }
+    .texto-inicio{
+        font-size: 16px;
+        max-width: 90%;
+      }
     form {
         padding: 10px;
         overflow-x: hidden;
@@ -339,6 +374,6 @@ select {
       }
 
     .footer{
-        font-size: 8pxd;
+        font-size: 8px;
     }
 }
