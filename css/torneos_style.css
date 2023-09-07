@@ -99,7 +99,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
     cursor: pointer;
 }
@@ -241,21 +241,22 @@ select {
   /* Estilos para el menú desplegable */
   .menu {
     position: fixed;
-    top: 0;
-    left: -100%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
+    left: 0;
+    top: -300%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     list-style: none;
     padding: 0;
     margin: 0;
-    transition: left 0.3s ease-in-out;
+    transition: top 0.6s ease-in-out;
     z-index: 100;
   }
   
   /* Estilos para mostrar el menú */
   .menu.show {
-    left: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.9);
@@ -265,6 +266,9 @@ select {
     font-style: italic;
     font-size: 18px;
     padding: 30px;
+  }
+  .menu p{
+    font-size: 18px;
   }
   
 
@@ -300,6 +304,14 @@ select {
 
 /* Media Queries para hacer la página responsive */
 @media screen and (max-width: 768px) {
+    .menu li{
+        font-style: italic;
+        font-size: 16px;
+        padding: 25px;
+      }
+    .menu p{
+        font-size: 16px;
+      }
     form {
         padding: 10px;
         overflow-x: hidden;
