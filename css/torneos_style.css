@@ -9,6 +9,10 @@ body {
     background-color: #f8f8f8;
     color: #333;
 }
+section *:not(h2) {
+    margin-left: 0; /* Elimina cualquier margen izquierdo predeterminado */
+    /* Agrega otros estilos comunes aquí si es necesario */
+}
 
 header {
     overflow-x: hidden;
@@ -92,13 +96,11 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 2%;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 2% 4%;
     cursor: pointer;
 }
 
@@ -196,11 +198,11 @@ select {
 /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 7%;
+    top: 8%;
     left: 3%;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 27px;
     cursor: pointer;
   }
   
@@ -208,7 +210,7 @@ select {
     width: 30px;
     height: 4px;
     background-color: white;
-    margin: 6px 0;
+    margin: 4px 0;
     transition: 0.4s;
 }
 
@@ -230,15 +232,6 @@ select {
     bottom: 0;
   }
   
-  /* Estilos para rotar las rayas al abrir el menú */
-  .hamburger.open::before {
-    transform: rotate(-45deg) translate(-7px, 6px);
-  }
-  
-  .hamburger.open::after {
-    left: 20%;
-    transform: rotate(45deg) translate(-7px, -6px);
-  }
   
   /* Estilos para el contenedor del menú */
   .menu-container {
@@ -249,10 +242,10 @@ select {
   .menu {
     position: fixed;
     top: 0;
-    left: -200px; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
-    width: 200px;
-    height: 100vh;
-    background-color: gray;
+    left: -100%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -263,8 +256,9 @@ select {
   /* Estilos para mostrar el menú */
   .menu.show {
     left: 0;
-    height: 100vh;
-    background-color: gray;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
   }
 
   .menu li{
@@ -286,9 +280,9 @@ select {
   #scroll-to-top a {
     background-color: #007bff;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 100%;
     text-decoration: none;
   }
   
@@ -318,6 +312,24 @@ select {
         max-width: 100%;
         max-height: 100%;
       }
+
+      #scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        display: none;
+        z-index: 99;
+      }
+      
+      #scroll-to-top a {
+        background-color: #007bff;
+        color: #fff;
+        font-size: 15px;
+        padding: 8px;
+        border-radius: 100%;
+        text-decoration: none;
+      }
+
     .footer{
         font-size: 8pxd;
     }
