@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Torneos de Padel</title>
   <link rel="stylesheet" href="../css/torneos_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
   <header>
@@ -38,19 +40,28 @@
           <li>Partidos a un set con punto de oro.</li>
           <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
           <li>Se garantiza los partidos del cuadro +1 de eliminatoria.</li>
-          <li>Se garantiza un pack de bienvenida y premios por cada torneoA.</li>
+          <li>Con la inscripción se garantiza pack de bienvenida y premios.</li>
       </ul>
     </section>
 
 
     <section id="proximos-torneos">
       <h2>PRÓXIMOS TORNEOS</h2>
-      <ul>
-        <li>I MAX TOURNOMENT - 15 de Septiembre 2023</li> <img class="post-img" src="../img/poster.jpg">
-            <br><b>- Como llegar: <a 
-                href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
-              >Padel D10Z</a></b><br>
-      </ul>
+        <b>-</b> I MAX TOURNAMENT - 15 de Septiembre 2023
+        <br>
+        <a href="javascript:void(0);" onclick="abrirImagen('../img/poster.jpg')">
+          <img class="post-img" src="../img/poster.jpg" alt="Imagen de torneo">
+        </a>
+        <br><b>-</b> Como llegar: <a 
+            href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
+          >Padel D10Z</a><br>
+      </section>
+    
+      <!-- Contenedor modal para la imagen ampliada -->
+      <div id="imagen-modal" class="modal">
+        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+        <img class="modal-contenido" id="imagen-ampliada">
+      </div>
     </section>
 
 
@@ -63,7 +74,7 @@
           <label for="torneo">Torneo al que desea inscribirse:</label>
           <select id="torneo" name="torneo" required>
             <option value="" selected disabled>Seleccionar torneo</option>
-            <option value="5 de agosoto">I MAX TOURNOMENT - 15 de Septiembre</option>
+            <option value="5 de agosoto">I MAX TOURNAMENT - 15 de Septiembre</option>
             <!-- <option value="15 de agosto">Torneo verano 15 de agosto</option> -->
           </select><br>
 
@@ -122,6 +133,11 @@
     </footer>
   </div>
 
+  <div id="scroll-to-top">
+    <a href="#top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
   <script src="../js/script.js"></script>
 </body>
 </html>
