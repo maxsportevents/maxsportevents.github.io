@@ -10,18 +10,14 @@ body {
     color: #333;
 }
 section *:not(h2) {
-    margin-left: 0; /* Elimina cualquier margen izquierdo predeterminado */
-    /* Agrega otros estilos comunes aquí si es necesario */
+    margin-left: 0;
 }
 
 header {
     overflow-x: hidden;
     position: relative;
-    background-image: url("../img/logo.JPG");
-    background-position: center;
-    background-size: cover;
+    background-color: black;
     text-align: center;
-    padding: 3.33% 0;
 }
 
 /*Imagen poster*/
@@ -198,8 +194,8 @@ select {
 /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 8%;
-    left: 3%;
+    top: 10%;
+    right: 3%;
     display: block;
     width: 38px;
     height: 27px;
