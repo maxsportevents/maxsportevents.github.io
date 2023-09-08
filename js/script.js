@@ -35,6 +35,7 @@ function closeMenu() {
   
     // Mostrar el modal
     modal.style.display = "block";
+    ocultarEncabezado();
   }
   
   function cerrarImagen() {
@@ -43,4 +44,17 @@ function closeMenu() {
   
     // Ocultar el modal
     modal.style.display = "none";
+    mostrarEncabezado();
   }
+
+  function ocultarEncabezado() {
+    const encabezado = document.getElementById("header");
+    // Cambiar el estilo para ocultar el encabezado
+    encabezado.style.display = "none";
+}
+
+function mostrarEncabezado() {
+  const encabezado = document.getElementById("header");
+  // Cambia el estilo para mostrar el encabezado
+  encabezado.style.display = "block";
+}
