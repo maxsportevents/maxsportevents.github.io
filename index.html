@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <img src="img/logo pequeño.JPG" style="width: 10%; height: 10%;">
+      <img src="img/logo.JPG" style="width: 10%; height: 10%;">
       <span class="hamburger" onclick="openMenu()">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -19,8 +19,8 @@
       </span>
       <ul class="menu" id="menu">
           <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li><br>
-          <li><a href="#información" onclick="closeMenu()">Información</a></li><br>
           <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li><br>
+          <li><a href="#información" onclick="closeMenu()">Información</a></li><br>
           <li><a href="#inscripcion" onclick="closeMenu()">Inscripción</a></li><br>
           <li><a href="contacto">Contacto</a></li>
           <p class="info">Más Información:</p>
@@ -34,28 +34,16 @@
 
     <div class="texto-inicio">
       <p>Te damos la bienvenida a MAX Sport Events, tu destino para el emocionante mundo del pádel.<br>
-        Nuestra misión es fomentar la camaradería y la competencia, 
-          creando oportunidades emocionantes para que los jugadores de todos los niveles se destaquen en la cancha.<br>
+        Nuestra misión es crear oportunidades para que los jugadores de todos los niveles se destaquen en la cancha.<br>
         Desde la intensidad de la competencia hasta la diversión y la emoción de cada partido, 
-          cada evento está cuidadosamente planeado para que disfrutes al máximo.<br>
-        Aquí, no solo encontrarás información sobre nuestros próximos torneos, sino también la oportunidad de inscribirte
-         y formar parte de nuestra creciente comunidad de apasionados del pádel. 
-        ¡Es hora de elevar tu juego al siguiente nivel y vivir la verdadera esencia del pádel con MAX Sport Events!</p>
+          cada evento está planeado para que disfrutes al máximo.<br>
+        ¡Anímate a vivir esta experiencia con MAX Sport Events!</p>
       <a class="boton" href="#inscripcion">INSCRÍBETE AHORA</a>
     </div>
 
 
-<!-- Información de los torneos -->
-    <section id="información">
-      <h2>INFORMACIÓN</h2>
-          <li>Partidos a un set con punto de oro.</li>
-          <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
-          <li>Cada pareja se asegura jugar los partidos del cuadro +1 de eliminatoria.</li>
-          <li>Con la inscripción se garantiza pack de bienvenida y premios.</li>
-    </section>
-
-
-    <section id="proximos-torneos">
+<!--PROXIMOS TORNEOS-->
+    <section id="proximos-torneos" >
       <h2>PRÓXIMOS TORNEOS</h2>
         <p>- I MAX TOURNAMENT - 15 de Septiembre 2023</p>
 
@@ -64,7 +52,7 @@
         </a>
         <br><p>- Como llegar: <b><a 
             href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
-          >Padel D10Z</a></b></p><br>
+          >Padel D10Z</a></b></p>
       </section>
     
       <!-- Contenedor modal para la imagen ampliada -->
@@ -72,6 +60,15 @@
         <span class="cerrar" onclick="cerrarImagen()">&times;</span>
         <img class="modal-contenido" id="imagen-ampliada">
       </div>
+    </section>
+
+    <!-- Información de los torneos -->
+    <section id="información">
+      <h2>INFORMACIÓN</h2>
+          <li>Partidos a un set con punto de oro.</li>
+          <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
+          <li>Cada pareja se asegura jugar los partidos del cuadro +1 de eliminatoria.</li>
+          <li>Con la inscripción se garantiza pack de bienvenida y premios.</li>
     </section>
 
 
