@@ -21,11 +21,39 @@ header {
     width: 100%;
     z-index: 101;
 }
+header img{
+  width: 5%;
+  height: 5%;
+}
 
-.texto-inicio{
-  background-color: rgb(219, 219, 57);
-  max-width: 50%;
-  padding: 2% 4%;
+
+.box-text {
+  position: relative;
+  width: 50%;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.right {
+  animation: slideFromRight 0.8s ease-in-out forwards;
+}
+
+.right1 {
+  animation: slideFromRight 1.4s ease-in-out forwards; 
+}
+.right2 {
+  animation: slideFromRight 2s ease-in-out forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+      right: -100%;
+      opacity: 0;
+  }
+  100% {
+      right: 0;
+      opacity: 1;
+  }
 }
 
 .boton {
@@ -336,6 +364,14 @@ input:focus {
 
 /* Media Queries para hacer la página responsive */
 @media screen and (max-width: 768px) {
+    header img{
+      width: 10%;
+      height: 10%;
+    }
+    .box-text {
+      width: 90%;
+      font-size: 16px;
+    }
     .menu li{
         font-style: italic;
         font-size: 16px;
@@ -343,10 +379,6 @@ input:focus {
       }
     .menu p{
         font-size: 16px;
-      }
-    .texto-inicio{
-        font-size: 16px;
-        max-width: 90%;
       }
     form {
         padding: 10px;
