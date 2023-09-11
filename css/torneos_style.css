@@ -9,9 +9,6 @@ body {
     background-color: #f8f8f8;
     color: #333;
 }
-section *:not(h2) {
-    margin-left: 0;
-}
 
 header {
     position: fixed;
@@ -190,7 +187,6 @@ section {
 /* Estilos para el formulario de inscripción */
 form {
     max-width: 90%;
-    margin: auto;
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
