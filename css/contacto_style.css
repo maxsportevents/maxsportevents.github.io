@@ -10,54 +10,61 @@ body {
   }
 
   header {
-    background-color: #000;
-    color: #fff;
+    position: fixed;
+	  top: 0;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    z-index: 101;
     text-align: center;
+}
+  header img{
+    width: 5%;
+    height: 5%;
   }
-  
-  header h1 {
-    margin-left: 45%;
-    font-style: italic;
-  }
+  #milogo:hover {
+    cursor: pointer;
+}
   
   h2{
+    position: relative;
     margin-left: 30%;
   }
 
-nav {
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1% 5%;
 }
 
-nav ul {
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+  }
 
-nav ul li {
+  nav ul li {
     display: inline-block;
-}
+  }
 
-nav ul li a {
-  color: #ffff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-nav ul li a:hover {
-text-decoration: none; /* Quitamos el subrayado predeterminado */
-background-image: linear-gradient(to top, #007bff, #007bff); /* Color del subrayado */
-background-repeat: no-repeat;
-background-size: 100% 2px; /* Ancho y grosor del subrayado */
-background-position: 0 100%; 
-}
+  nav ul li a:hover {
+    text-decoration: none; /* Quitamos el subrayado predeterminado */
+    background-image: linear-gradient(to top, #007bff, #007bff); /* Color del subrayado */
+    background-repeat: no-repeat;
+    background-size: 100% 2px; /* Ancho y grosor del subrayado */
+    background-position: 0 100%; 
+  }
   
   main {
-    padding: 2% 5%;
+    padding: 10% 5%;
   }
   
   section {
@@ -107,7 +114,7 @@ background-position: 0 100%;
   /* Estilos para las tres rayas (hamburguesa) */
 .hamburger {
     position: absolute;
-    top: 3%;
+    top: 15%;
     right: 3%;
     display: block;
     width: 40px;
@@ -193,12 +200,16 @@ background-position: 0 100%;
   }
   
   @media screen and (max-width: 768px) {
+    header img{
+      width: 10%;
+      height: 10%;
+    }
     .menu li{
       font-style: italic;
       font-size: 16px;
       padding: 25px;
     }
-  .menu p{
+    .menu p{
       font-size: 16px;
     }
     form {
@@ -208,7 +219,5 @@ background-position: 0 100%;
     section *:not(h1){
       margin-left: 0;
     }
-    header h1{
-      margin-left: 35%;
-    }
+    
 }

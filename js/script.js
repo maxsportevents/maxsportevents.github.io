@@ -58,3 +58,13 @@ function mostrarEncabezado() {
   // Cambia el estilo para mostrar el encabezado
   encabezado.style.display = "block";
 }
+
+
+ // Redireccionar imagen
+ const imagen = document.getElementById('milogo');
+        
+ // Agregamos un evento de clic a la imagen
+ imagen.addEventListener('click', function() {
+     // Redireccionamos al índice (u otra página) al hacer clic en la imagen
+     window.location.href = '..';
+ });

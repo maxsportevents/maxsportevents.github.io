@@ -12,6 +12,7 @@ body {
 
 header {
     position: fixed;
+	  top: 0;
     overflow-x: hidden;
     background-color: rgba(0, 0, 0, 0.87);
     text-align: center;
@@ -21,6 +22,9 @@ header {
 header img{
   width: 5%;
   height: 5%;
+}
+#milogo:hover {
+  cursor: pointer;
 }
 
 
