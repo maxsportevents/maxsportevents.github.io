@@ -218,6 +218,14 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
 select {
     width: 90%;
@@ -253,11 +261,8 @@ input:focus {
 
 
 
-/* Estilos para las tres rayas (hamburguesa) */
+/* Estilos para las tres rayas*/
 .hamburger {
-    position: absolute;
-    top: 15%;
-    right: 3%;
     display: block;
     width: 38px;
     height: 27px;
