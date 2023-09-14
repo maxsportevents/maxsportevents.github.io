@@ -295,46 +295,24 @@ input:focus {
     bottom: 0;
   }
   
-  
-  /* Estilos para el contenedor del menú */
-  .menu-container {
-    position: relative;
-  }
-  
-  /* Estilos para el menú desplegable */
-  .menu {
-    position: fixed;
-    left: 0;
-    top: -300%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    transition: top 0.6s ease-in-out;
-    z-index: 100;
-    overflow-y: auto;
-  }
-  
-  /* Estilos para mostrar el menú */
-  .menu.show {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.9);
+
+/* Desktop Header Menu View */
+
+
+@media screen and (min-width: 768px) {
+  .menu li {
+    display: inline-block;
+    margin: 0px 1em;
   }
 
-  .menu li{
-    font-style: italic;
-    font-size: 18px;
-    padding: 30px;
-  }
-  .menu p{
-    font-size: 18px;
-  }
+  .menu li:nth-child(1),
+  .menu .info,
+  .menu .info + li,
+  .menu .info + li + li { display: none; }
+}
+
+
+  
   
 
 /*Flecha para subir al inicio*/
@@ -377,6 +355,47 @@ input:focus {
       width: 90%;
       font-size: 16px;
     }
+    /* Estilos para el contenedor del menú */
+  .menu-container {
+    position: relative;
+  }  
+  /* Estilos para el menú desplegable */
+  .menu {
+    position: fixed;
+    left: 0;
+    top: -300%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: top 0.6s ease-in-out;
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  .menu li {
+    display: block;
+  }
+
+  /* Estilos para mostrar el menú */
+  .menu.show {
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+  }
+  .menu li{
+    font-style: italic;
+    font-size: 18px;
+    padding: 30px;
+  }
+  .menu p{
+    font-size: 18px;
+  }
+  /**/
+
     .menu li{
         font-style: italic;
         font-size: 16px;
@@ -402,24 +421,24 @@ input:focus {
       display: block;
     }
 
-      #scroll-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 10px;
-        display: none;
-        z-index: 99;
-      }
-      
-      #scroll-to-top a {
-        background-color: #007bff;
-        color: #fff;
-        font-size: 15px;
-        padding: 8px;
-        border-radius: 100%;
-        text-decoration: none;
-      }
-
-    .footer{
-        font-size: 8px;
+    #scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 10px;
+      display: none;
+      z-index: 99;
     }
+    
+    #scroll-to-top a {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 15px;
+      padding: 8px;
+      border-radius: 100%;
+      text-decoration: none;
+    }
+
+  .footer{
+      font-size: 8px;
+  }
 }
