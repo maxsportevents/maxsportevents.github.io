@@ -35,24 +35,24 @@ header img{
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.right {
+.right, .right1, .right2 {
   animation: slideFromRight 0.8s ease-in-out forwards;
 }
 
 .right1 {
-  animation: slideFromRight 1.4s ease-in-out forwards; 
+  animation-delay: 200ms;
 }
 .right2 {
-  animation: slideFromRight 2s ease-in-out forwards;
+  animation-delay: 400ms;
 }
 
 @keyframes slideFromRight {
-  0% {
-      right: -100%;
+  from {
+      transform: translateX(100%);
       opacity: 0;
   }
-  100% {
-      right: 0;
+  to {
+    transform: translateX(0);
       opacity: 1;
   }
 }
@@ -62,7 +62,7 @@ header img{
   display: inline-block;
   background-color: #007bff;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 12px;
   border-radius: 5px;
@@ -263,7 +263,7 @@ input:focus {
 
 /* Estilos para las tres rayas*/
 .hamburger {
-    display: block;
+    display: none;
     width: 38px;
     height: 27px;
     cursor: pointer;
@@ -397,6 +397,10 @@ input:focus {
         max-width: 100%;
         max-height: 100%;
       }
+
+    .hamburger{
+      display: block;
+    }
 
       #scroll-to-top {
         position: fixed;
