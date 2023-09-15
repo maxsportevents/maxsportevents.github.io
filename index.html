@@ -12,144 +12,129 @@
 <body>
   <header id="header">
     <nav>
-      <img src="img/logo.JPG" id="milogo">
+      <img src="img/logo.JPG" id="logo">
       <span class="hamburger" onclick="openMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </span>
       <ul class="menu" id="menu">
-          <li><a style="font-size: 30px;" onclick="closeMenu()">✘</a></li>
-          <li><a href="#proximos-torneos" onclick="closeMenu()">Próximos Torneos</a></li>
-          <li><a href="#información" onclick="closeMenu()">Información</a></li>
-          <li><a href="#inscripción" onclick="closeMenu()">Inscripción</a></li>
-          <li><a href="contacto">Contacto</a></li>
-          <p class="info">Más Información:</p>
-          <li><a href="https://instagram.com/maxsportevents" class="enlace-instagram">Instagram</a></li>
-          <li><a href="tel:646263836" class="numero-telefono">646 263 836</a></li>
-        </ul>
+        <li><a href="#torneos" onclick="closeMenu()">Próximos Torneos</a></li>
+        <li><a href="#información" onclick="closeMenu()">Información</a></li>
+        <li><a href="#inscripción" onclick="closeMenu()">Inscripción</a></li>
+        <li><a href="contacto">Contacto</a></li>
+        <li><a href="https://instagram.com/maxsportevents" class="enlace-instagram">Instagram</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
 
-    <!--Texto inicial-->
-    <div class="box-text right" id="box1">
-      <p>Te damos la bienvenida a MAX Sport Events, tu destino para el emocionante mundo del pádel.</p>
-    </div>
-    <div class="box-text right1" id="box2">
-      <p>Nuestra misión es crear oportunidades para que los jugadores de todos los niveles se destaquen en la cancha.</p>
-    </div>
-    <div class="box-text right2" id="box3">
-      <p>¡Anímate a vivir la intensidad de la competencia junto con la diversión y la emoción de cada partido con MAX Sport Events!</p>
-      <a class="boton" href="#inscripción">INSCRÍBETE AHORA</a>
-    </div>
 
-
-<!--PROXIMOS TORNEOS-->
-    <section id="proximos-torneos" >
-      <h2>PRÓXIMOS TORNEOS</h2>
-        <p>- I MAX TOURNAMENT - 15 de Septiembre 2023</p>
-
-        <a href="javascript:void(0);" onclick="abrirImagen('../img/poster.jpg')">
-          <img class="post-img" src="img/poster.jpg" alt="Imagen de torneo">
+    <!-- Proximos torneos -->
+    <div class="torneos" id="torneos">
+      <h1>PRÓXIMOS TORNEOS</h1>
+      <div class="description">
+        <a href="javascript:void(0);" onclick="abrirImagen('/img/poster.jpg')">
+          <img src="img/poster.jpg" alt="poster">
         </a>
-        <br><p>- Como llegar: <b><a 
-            href="https://www.google.com/maps/dir/40.4094976,-3.6470784/padeld10z/@41.0084257,-5.6382639,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd476dab12ef88bb:0x5abce5c04219c79e!2m2!1d-4.7730361!2d41.623986?entry=ttu"
-          >Padel D10Z</a></b></p>
-      </section>
-    
-      <!-- Contenedor modal para la imagen ampliada -->
-      <div id="imagen-modal" class="modal">
-        <span class="cerrar" onclick="cerrarImagen()">&times;</span>
-        <img class="modal-contenido" id="imagen-ampliada">
-      </div>
-    </section>
-
-    <!-- Información de los torneos -->
-    <section id="información">
-      <h2>INFORMACIÓN</h2>
+        <div id="imagen-modal" class="modal">
+          <span class="cerrar" onclick="cerrarImagen()">&times;</span>
+          <img class="modal-contenido" id="imagen-ampliada">
+        </div>
+        <ul>
           <li>Partidos a un set con punto de oro.</li>
           <li>Fase de grupos y pase a cuadro principal o de consolación.</li>
           <li>Cada pareja se asegura jugar los partidos del cuadro +1 de eliminatoria.</li>
-          <li>Con la inscripción se garantiza pack de bienvenida y premios.</li>
-          <li>El importe se abonará en el lugar y el día del torneo.</li>
-    </section>
+          <li>El cartel detalla los premios del torneo, el pack de bienvenida y el material utilizado</li>
+          <li>Como llegar: <a href="https://google.com">FALTACLUB</a></li>
+        </ul>
+      </div>
+    </div>
 
 
-<!-- Form para la inscripción -->
-
-    <section id="inscripción">
-      <h2>INSCRIPCIÓN</h2>
-        <form action="https://formspree.io/f/moqoevay" method="POST">
-           
-          <label for="torneo">Torneo al que desea inscribirse:</label>
-          <select id="torneo" name="torneo" required>
-            <option value="" selected disabled>Seleccionar torneo</option>
-            <option value="5 de agosoto">I MAX TOURNAMENT - 15 de Septiembre</option>
-            <!-- <option value="15 de agosto">Torneo verano 15 de agosto</option> -->
-          </select><br>
-
-          
+    <!-- Información ->
+    <div class="información" id="información">
+      <h1>INFORMACIÓN</h1>
+      <img src="img/poster.jpg" alt="poster" style="width: 50%; height: auto;">
+    </div> -->
 
 
-            <div class="first_player">
-                <h4><span class="highlight">Primer jugador:</span></h4>
-                <label for="nombre">Nombre y apellidos:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
+    <!-- Incripción -->
+    <div class="inscripción" id="inscripción">
+      <form action="https://formspree.io/f/moqoevay" method="POST">
+        <h1>INSCRIPCIÓN</h1>
+        <div class="comun-container">
+          <div class="comun">
+              <label for="torneo"><b>Torneo al que desea inscribirse:</b></label>
+              <select id="torneo" name="torneo" required>
+                  <option value="" selected disabled>Seleccionar torneo</option>
+                  <option value="5 de agosoto">I MAX TOURNAMENT - 15 de Septiembre</option>
+              </select>
+          </div>
+          <div class="comun">
+              <label for="nivel"><b>Categoría que desea inscribirse:</b></label>
+              <select id="nivel" name="nivel" required>
+                  <option value="" selected disabled>Seleccionar Categoría</option>
+                  <option value="principiante">I Categoría</option>
+                  <option value="intermedio">II Categoría</option>
+                  <option value="avanzado">III Categoría</option>
+              </select>
+          </div>
+        </div>
 
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
+        
 
-                <label for="telefono">Teléfono de contacto:</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br>
-            </div>
+        <div class="players">
+          <div class="first_player">
+              <h3>PRIMER JUGADOR</h3>
+              <img src="img/persona.png"><br>
+              <label for="nombre">Nombre y apellidos:</label><br>
+              <input type="text" id="nombre" name="nombre" required><br>
 
+              <label for="email">Correo electrónico:</label><br>
+              <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
 
-            <div class="second_player">
-              <h4><span class="highlight">Segundo jugador:</span></h4>
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre2" name="nombre2" required><br>
-
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email2" name="email2" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
-
-                <label for="telefono">Teléfono de contacto:</label><br>
-                <input type="tel" id="telefono2" name="telefono2" required><br>
-            </div>
+              <label for="telefono">Teléfono de contacto:</label><br>
+              <input type="tel" id="telefono" name="telefono" required><br>
+          </div>
 
 
+          <div class="second_player">
+            <h3>SEGUNDO JUGADOR</h3>
+            <img src="img/persona.png"><br>
+              <label for="nombre">Nombre completo:</label><br>
+              <input type="text" id="nombre2" name="nombre2" required><br>
 
-            <br><label for="nivel">Categoría a la que desea inscribirse:</label><br>
-            <select id="nivel" name="nivel" required>
-                <option value="" selected disabled>Seleccionar Categoría</option>
-                <option value="principiante">I Categoría</option>
-                <option value="intermedio">II Categoría</option>
-                <option value="avanzado">III Categoría</option>
-            </select>
-            <br>
-            <h4><u>Importe: 40€</u></h4>
-            <p>El pago se realizara en efectivo en el lugar del torneo.</p>
-            <button type="submit">Realizar Inscripción</button>
-        </form>
+              <label for="email">Correo electrónico:</label><br>
+              <input type="email" id="email2" name="email2" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
+
+              <label for="telefono">Teléfono de contacto:</label><br>
+              <input type="tel" id="telefono2" name="telefono2" required><br>
+          </div>
+        </div>
 
 
-    </section>
+
+  
+          <button type="submit">Realizar Inscripción</button>
+          <p>Importe: 40€. El pago se realizara en efectivo en el lugar del torneo.</p>
+      </form>
+    </div>
+
+
   </main>
-
-<!-- Footer -->
-
-  <div class="footer">
-    <footer>
-      <p>© 2023 MAX Sport Events. Todos los derechos reservados.</p>
-    </footer>
-  </div>
-
+ 
   <div id="scroll-to-top">
     <a href="#top">
       <i class="fas fa-arrow-up"></i>
     </a>
   </div>
+  <footer>
+    <p>© 2023 MAX Sport Events. Todos los derechos reservados.</p>
+  </footer>
+ 
+ 
   <script src="js/script.js"></script>
 </body>
 </html>

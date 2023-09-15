@@ -1,134 +1,72 @@
-/* Estilos generales */
+/* Estilos generales*/
 body {
-    overflow-x: hidden;
+    font-size: 18px;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    margin: 0;
     padding: 0;
+    margin: 0;
     line-height: 1.6;
-    background-color: #f8f8f8;
     color: #333;
+    background-color: #eef2f3;
+}
+main {
+    padding: 2% 5%;
+    padding-top: 12%;
 }
 
-header {
+
+
+
+/* Header */
+header{
     position: fixed;
-	  top: 0;
-    overflow-x: hidden;
-    background-color: rgba(0, 0, 0, 0.87);
-    text-align: center;
-    width: 100%;
-    z-index: 101;
-}
-header img{
-  width: 5%;
-  height: 5%;
-}
-#milogo:hover {
-  cursor: pointer;
-}
-
-
-.box-text {
-  position: relative;
-  width: 50%;
-  opacity: 0;
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.right, .right1, .right2 {
-  animation: slideFromRight 0.8s ease-in-out forwards;
-}
-
-.right1 {
-  animation-delay: 200ms;
-}
-.right2 {
-  animation-delay: 400ms;
-}
-
-@keyframes slideFromRight {
-  from {
-      transform: translateX(100%);
-      opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-.boton {
-  position: relative;
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.boton:hover {
-  background-color: #0056b3;
-}
-
-
-/*Imagen poster*/
-.post-img {
-    width: 500px;
-    height: 700px;
-}
-/*Imagen ampliada*/
-/* Estilos para el contenedor de la imagen modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  /* Estilos para el contenido de la imagen modal */
-  .modal-contenido {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
-  }
-  
-  /* Estilos para el botón de cerrar en la imagen modal */
-  .cerrar {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .cerrar:hover,
-  .cerrar:focus {
-    color: #f44336;
-  }
-  
-  /* Estilos para el enlace que muestra la imagen modal */
-  .post-img {
-    cursor: pointer;
-  }
-
-
-b {
-    font-size: 16px;
+    background-color: black;
+    z-index: 150;
 }
-b a {
-    color: rgb(59, 59, 196);
+header img{
+    z-index: 150;
+    height: 5%;
+    width: 5%;
+}
+header img:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+/* MENU*/
+.menu li {
+    display: inline-block;
+    margin: 0px 1em;
+}
+
+.hamburger {
+    z-index: 150;
+    display: none;
+    width: 38px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Barras del menu*/
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
 }
 
 nav {
@@ -136,6 +74,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1% 5%;
+    text-align: center;
 }
 
 nav ul {
@@ -152,293 +91,284 @@ nav ul li a {
     color: #ffff;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 nav ul li a:hover {
-  text-decoration: none; /* Quitamos el subrayado predeterminado */
-  background-image: linear-gradient(to top, #007bff, #007bff); /* Color del subrayado */
-  background-repeat: no-repeat;
-  background-size: 100% 2px; /* Ancho y grosor del subrayado */
-  background-position: 0 100%; 
-}
-
-main {
-  padding: 2% 5%;
-  padding-top: 12%;
-}
-
-section {
-    margin-bottom: 3%;
+  text-decoration: none;
+  color: rgb(224, 225, 133);
 }
 
 
-/* Estilos para el botón */
-.btn, button {
-    display: inline-block;
-    background-color: #007bff;
+
+
+
+/* Torneos */
+.torneos{
+    background-color: white;
+    border-radius: 5%;
+    padding: 1% 5%;
+    margin-top: 5%;
+}
+.description{
+    display: flex;
+}
+.description ul{
+    flex-direction: column;
+    margin: 15% 0 0 5%;
+}
+.torneos img{
+    height: 700px;
+    width: 500px;
+}
+/* Estilos para la imagen modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 50px;
+    font-weight: bold;
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
     cursor: pointer;
 }
-
-.btn:hover, button:hover {
-    background-color: #0056b3;
+.cerrar:hover,
+.cerrar:focus {
+    color: #f44336;
 }
 
-/* Estilos para el formulario de inscripción */
-form {
-    max-width: 90%;
+
+
+
+/* FORMULARIO */
+/* Container*/
+.inscripción {
+    background-color: white;
+    border-radius: 5%;
+    padding: 1% 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* Parte común*/
+.comun-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+select {
+    width: 300px;
+    text-align: center;
+    padding: 3px 0 3px 0;
+    border: 2px solid #2a88c7;
+    border-radius: 10px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+select:hover {
+    border-color: #2980b9;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
-.highlight {
-  background-color: #007bff;
-  padding: 2px 5px;
+
+/* First player */
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
 }
-
-
+.first_player, .second_player{
+    position: relative;
+    padding: 3%;
+    margin: 5%;
+    text-align: center;
+    background-color: #eef2f3;
+    border-radius: 5%;
+}
+.first_player img, .second_player img {
+    width: 10%;
+}
+/* Estilo para el elemento <label> */
 label {
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+}
+
+/* Estilo para el elemento <input> */
+input, textarea{
+    background-color: transparent;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
     outline: none;
 }
-
-input {
-    width: 90%;
-    left: 25%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-input,
-  textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-select {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input:focus, textarea:focus {
+    border-bottom: 3px solid #2a88c7;
+    outline: none; 
 }
 
-.first_player{
-    position: relative;
-    top: 0%;
-    left: 0%;
-}
-
-.second_player{
-    position: relative;
-    top: 0%;
-    left: 0%;
-}
-
-/* Estilo base para el campo de entrada */
-input{
-  border-bottom: 2px solid #333;
-  transition: border-bottom 0.3s ease; /* Animación de transición */
-  outline: none; /* Elimina el borde de enfoque predeterminado */
-}
-
-/* Estilo para el borde de enfoque */
-input:focus {
-  border-bottom: 4px solid #007bff; /* Cambia el color del borde en enfoque */
-}
-
-
-
-/* Estilos para las tres rayas*/
-.hamburger {
-    display: none;
-    width: 38px;
-    height: 27px;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 4px;
+/* Estilo para el formulario de contacto */
+.form-contact{
     background-color: white;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .hamburger::before {
-    top: 0;
-  }
-  
-  .hamburger::after {
-    bottom: 0;
-  }
-  
-
-/* Desktop Header Menu View */
-
-
-@media screen and (min-width: 768px) {
-  .menu li {
-    display: inline-block;
-    margin: 0px 1em;
-  }
-
-  .menu li:nth-child(1),
-  .menu .info,
-  .menu .info + li,
-  .menu .info + li + li { display: none; }
+    border-radius: 5%;
+    padding: 5%;
 }
 
 
-  
-  
+button[type="submit"] {
+    background-color: #2a88c7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-/*Flecha para subir al inicio*/
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+
+
+
+
+
+
+/* Flecha para subir al inicio */
 #scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     display: none;
     z-index: 99;
-  }
+}
   
-  #scroll-to-top a {
+#scroll-to-top a {
     background-color: #007bff;
     color: #fff;
     font-size: 20px;
     padding: 10px;
     border-radius: 100%;
     text-decoration: none;
-  }
+}
   
-  #scroll-to-top a:hover {
+#scroll-to-top a:hover {
     background-color: #0056b3;
-  }
+}
 
 
 /* Pie de página */
-.footer {
+footer {
     text-align: center;
     font-size: 12px;
-    color: #050404;
 }
 
-/* Media Queries para hacer la página responsive */
-@media screen and (max-width: 768px) {
+
+
+
+
+
+
+
+/* Telefono */
+
+@media screen and (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+    /* Header */
     header img{
-      width: 10%;
-      height: 10%;
+        height: 10%;
+        width: 10%;
     }
-    .box-text {
-      width: 90%;
-      font-size: 16px;
+
+    /* Estilos para el menú desplegable */
+    .hamburger{
+        display: block;
     }
-    /* Estilos para el contenedor del menú */
-  .menu-container {
-    position: relative;
-  }  
-  /* Estilos para el menú desplegable */
-  .menu {
-    position: fixed;
-    left: 0;
-    top: -300%; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
-    width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    transition: top 0.6s ease-in-out;
-    z-index: 100;
-    overflow-y: auto;
-  }
-
-  .menu li {
-    display: block;
-  }
-
-  /* Estilos para mostrar el menú */
-  .menu.show {
-    position: fixed;
-    top: 0;
-    background-color: rgb(0, 0, 0, 0.9);
-  }
-  .menu li{
-    font-style: italic;
-    font-size: 18px;
-    padding: 30px;
-  }
-  .menu p{
-    font-size: 18px;
-  }
-  /**/
-
+    .menu-container {
+        position: relative;
+    }  
+    .menu {
+        position: fixed;
+        left: 0;
+        top: -300%;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        transition: top 0.8s ease-in-out;
+        z-index: 100;
+        overflow-y: auto;
+    }
+    .menu li {
+        display: block;
+    }
+    .menu.show {
+        position: fixed;
+        top: 5.5%;
+        background-color: rgb(0, 0, 0, 0.9);
+    }
     .menu li{
-        font-style: italic;
-        font-size: 16px;
+        font-family: "Circular", sans-serif;
+        font-size: 30px;
         padding: 25px;
-      }
-    .menu p{
-        font-size: 16px;
-      }
-    form {
-        padding: 10px;
-        overflow-x: hidden;
+        font-weight: 500;
     }
-    .post-img{
+
+    /* Torneos */
+    .torneos, .inscripción{
+        border-radius: 1%;
+    }
+    .description{
+        flex-direction: column;
+    }
+    .description ul{
+        margin: 4% 0 0 0;
+    }
+    .torneos img{
         height: 400px;
         width: 300px;
     }
-    .modal-contenido {
-        max-width: 100%;
-        max-height: 100%;
-      }
-
-    .hamburger{
-      display: block;
+    /* Formulario*/
+    select {
+        width: 150px;
     }
-
-    #scroll-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 10px;
-      display: none;
-      z-index: 99;
+    .players{
+        display: block;
     }
     
-    #scroll-to-top a {
-      background-color: #007bff;
-      color: #fff;
-      font-size: 15px;
-      padding: 8px;
-      border-radius: 100%;
-      text-decoration: none;
+    /* footer */
+    footer{
+        font-size: 8px;
     }
-
-  .footer{
-      font-size: 8px;
-  }
 }

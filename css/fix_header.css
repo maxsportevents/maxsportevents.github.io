@@ -10,7 +10,7 @@ main { /* Para cuando entras a la web como tal */
 	padding-top: var(--header-height); /* Para modificar el valor 'top' */
 }
 
-section#proximos-torneos,
+section#torneos,
 section#información,
 section#inscripción {
 	padding-top: var(--header-height);
