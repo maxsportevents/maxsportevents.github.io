@@ -43,6 +43,7 @@ header img:hover{
     margin: 0px 1em;
 }
 
+/* Estilo para el ícono de hamburguesa */
 .hamburger {
     z-index: 150;
     display: none;
@@ -60,14 +61,32 @@ header img:hover{
     margin: 6px 0;
     transition: 0.4s;
 }
-/* Barras del menu*/
+
+/* Barras del menú (estado inicial) */
 .bar {
     width: 30px;
     height: 4px;
     background-color: white;
     margin: 4px 0;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease, opacity 0.3s ease;
 }
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+    background-color: red;
+}
+
+input[type="checkbox"]:checked + .hamburger .bar:nth-child(2) {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + .hamburger .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+    background-color: red;
+}
+
 
 nav {
     display: flex;
@@ -318,7 +337,7 @@ footer {
     .menu {
         position: fixed;
         left: 0;
-        top: -300%;
+        top: -100%;
         width: 100vw;
         height: 100vh;
         max-height: 100vh;

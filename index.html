@@ -13,11 +13,12 @@
   <header id="header">
     <nav>
       <img src="img/logo.JPG" id="logo">
-      <span class="hamburger" onclick="openMenu()">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger" onclick="openMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-      </span>
+      </label>
       <ul class="menu" id="menu">
         <li><a href="#torneos" onclick="closeMenu()">Próximos Torneos</a></li>
         <li><a href="#información" onclick="closeMenu()">Información</a></li>
