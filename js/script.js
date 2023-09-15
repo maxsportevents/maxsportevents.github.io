@@ -13,6 +13,10 @@ function openMenu() {
 function closeMenu() {
     var menu = document.getElementById('menu');
     menu.classList.remove('show');
+    var menuToggle = document.getElementById("menu-toggle");
+    if (menuToggle.checked) {
+        menuToggle.checked = false;
+    }
   }
 
 
