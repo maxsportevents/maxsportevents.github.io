@@ -148,7 +148,8 @@ nav ul li a:hover {
 .prev-button,
 .next-button {
     position: relative;
-    background-color: rgba(166, 154, 154, 0.8);
+    color: black;
+    background: transparent;
     height: 100%;
     font-size: 24px;
     border: none;
