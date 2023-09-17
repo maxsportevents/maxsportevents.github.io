@@ -119,6 +119,53 @@ nav ul li a:hover {
 
 
 
+/* Información */
+.información {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.info-item {
+    width: 100%; /* Ajusta el ancho de cada div según tus necesidades */
+    padding: 10px; /* Añade espaciado interno según tus necesidades */
+    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra del div */
+}
+
+.prev-button,
+.next-button {
+    position: relative;
+    background-color: rgba(166, 154, 154, 0.8);
+    height: 100%;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0px;
+}
+
+.next-button {
+    right: 0px;
+}
+
+
+
+
 
 
 /* Torneos */

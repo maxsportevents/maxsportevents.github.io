@@ -64,3 +64,42 @@ function mostrarEncabezado() {
   const encabezado = document.getElementById("header");
   encabezado.style.display = "block";
 }
+
+
+
+
+
+
+
+const divs = document.querySelectorAll(".info-item");
+let currentIndex = 0;
+
+function showImage(index) {
+    const galleryDiv = document.getElementById("info-div");
+    currentIndex = index;
+
+    if (currentIndex < 0) {
+        currentIndex = divs.length - 1;
+    } else if (currentIndex >= divs.length) {
+        currentIndex = 0;
+    }
+
+    // Oculta todos los divs
+    divs.forEach((div, i) => {
+        if (i === currentIndex) {
+            div.style.display = "block";
+        } else {
+            div.style.display = "none";
+        }
+    });
+}
+
+function prevButton() {
+    showImage(currentIndex - 1);
+}
+
+function nextButton() {
+    showImage(currentIndex + 1);
+}
+
+showImage(currentIndex);
