@@ -120,12 +120,19 @@ nav ul li a:hover {
 
 
 /* Información */
+.h1info{
+    background-color: white;
+    border-radius: 5%;
+    padding: 1% 5%;
+    margin-top: 5%;
+    height: 10%;
+    width: 50%;
+}
 .información {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: white;
 }
 
 .info-content {
@@ -133,16 +140,12 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%;
-    max-height: 300px;
     overflow: hidden;
 }
 
 .info-item {
-    width: 100%; /* Ajusta el ancho de cada div según tus necesidades */
-    padding: 10px; /* Añade espaciado interno según tus necesidades */
-    
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra del div */
+    width: 100%;
+    padding: 10px;
 }
 
 .prev-button,
@@ -432,6 +435,11 @@ footer {
     }
     .players{
         display: block;
+    }
+    /* Información */
+    .h1info{
+        width: 90%;
+        border-radius: 2%;
     }
     
     /* footer */
