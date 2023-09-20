@@ -126,7 +126,7 @@ nav ul li a:hover {
     padding: 1% 5%;
     margin-top: 5%;
     height: 10%;
-    width: 50%;
+    width: 90%;
 }
 .información {
     display: flex;
@@ -166,6 +166,25 @@ nav ul li a:hover {
 .next-button {
     right: 0px;
 }
+.botón-info{
+    background-color: #2a88c7;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+.información button a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
 
 
 
@@ -416,7 +435,7 @@ footer {
     }
 
     /* Torneos */
-    .torneos, .inscripción{
+    .torneos, .inscripción, .h1info{
         border-radius: 1%;
     }
     .description{
@@ -438,7 +457,6 @@ footer {
     }
     /* Información */
     .h1info{
-        width: 90%;
         border-radius: 2%;
     }
     
